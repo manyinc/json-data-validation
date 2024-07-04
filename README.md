@@ -1,51 +1,32 @@
-====================================================================================================
-Project Overview
-====================================================================================================
+# JSON Validation Report Generator
 
-This project consists of independent scripts designed to validate JSON data from a CSV file and generate a detailed report on the validation results.
+This Python script validates JSON data from a CSV file and generates a detailed report on validation results.
 
-----------------------------------------------------------------------------------------------------
-Components
-----------------------------------------------------------------------------------------------------
+## Features
 
-1. `gen_raport.py`: This script reads JSON data from a CSV file, validates each JSON string, and generates a report (`return_json_valid_info.txt`) summarizing the validation status for each line.
+- Validates each JSON data entry in the CSV file.
+- Generates a report indicating validation status and error messages (if any).
+- Utilizes progress bars to indicate processing status.
 
-2. `utils.py`: Contains utility functions used in `gen_raport.py`, including progress bar rendering (`printProgressBar`), JSON validation (`validateJSON`), and subprocess validation (`validate_line`).
+## Usage
 
-----------------------------------------------------------------------------------------------------
-Usage
-----------------------------------------------------------------------------------------------------
+1. **Setup**: Ensure Python 3.x is installed on your system.
+2. **Clone the Repository**: Clone this repository to your local machine.
+   
+   ```bash
+   git clone https://github.com/your_username/your_repository.git
+   cd your_repository
+   ```
+3. **Install Dependencies**: There are no external dependencies beyond Python's standard library.
+4. **Run the Script**:
+   Modify the `csv_file_path` and `delimiter` variables in main.py to match your CSV file and delimiter respectively. Then execute the script:
 
-To use the project:
-- Ensure Python 3.x is installed on your system.
-- Clone the repository from GitHub.
+   ```bash
+   python main.py
+   ```
+5. View the Report: Once completed, a report file (return_json_valid_info.txt) will be generated in the project directory.
 
-----------------------------------------------------------------------------------------------------
-Instructions
-----------------------------------------------------------------------------------------------------
+## Structure
 
-1. Place your CSV file containing JSON data (`json-err.json`) in the project directory.
-2. Modify `csv_file_path` and `delimiter` in `gen_raport.py` if necessary.
-3. Run `python gen_raport.py`.
-4. Monitor the progress bar indicating the validation process.
-5. Once completed, view the generated report (`return_json_valid_info.txt`) for detailed validation results.
-
-----------------------------------------------------------------------------------------------------
-Dependencies
-----------------------------------------------------------------------------------------------------
-
-- This project uses standard Python libraries (`json`, `csv`, `subprocess`, `os`, `time`).
-
-----------------------------------------------------------------------------------------------------
-Author
-----------------------------------------------------------------------------------------------------
-
-- Created by [Your Name]
-
-----------------------------------------------------------------------------------------------------
-License
-----------------------------------------------------------------------------------------------------
-
-This project is licensed under the [License Name] License - see the LICENSE.md file for details.
-
-====================================================================================================
+- main.py: Main script to read CSV data, validate JSON entries, and generate the report.
+- return_json_valid_info.txt: Generated report file detailing validation results.
