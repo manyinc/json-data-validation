@@ -88,7 +88,7 @@ def gen_raport(save_file_path, csv_file_path, delimiter):
     print(f"------------> Raport saved in {save_file_path} <------------")
 
 if __name__ == "__main__":
-    csv_file_path = 'json-err.json'
+    csv_file_path = 'json-err.csv'
     delimiter = "	"
     save_file_path = "return_json_valid_info.txt"
     
