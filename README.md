@@ -14,8 +14,8 @@ This Python script validates JSON data from a CSV file and generates a detailed 
 2. **Clone the Repository**: Clone this repository to your local machine.
    
    ```bash
-   git clone https://github.com/your_username/your_repository.git
-   cd your_repository
+   git clone https://github.com/manyinc/json-data-validation.git
+   cd json-data-validation
    ```
 3. **Install Dependencies**: There are no external dependencies beyond Python's standard library.
 4. **Run the Script**:
